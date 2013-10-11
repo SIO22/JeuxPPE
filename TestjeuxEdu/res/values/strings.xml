@@ -6,5 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_alphabet">Alphabet</string>
     <string name="title_activity_calcul">Calcul</string>
+    <string name="title_activity_calcul_resultat">CalculResultat</string>
+    <string name="youHave">Vous avez</string>
 
 </resources>

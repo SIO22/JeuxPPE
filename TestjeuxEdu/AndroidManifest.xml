@@ -30,6 +30,12 @@
             android:name="com.example.testjeuxedu.Calcul"
             android:label="@string/title_activity_calcul" >
         </activity>
+        <activity android:name="com.example.testjeuxedu.Calcul2" >
+        </activity>
+        <activity
+            android:name="com.example.testjeuxedu.CalculResultat"
+            android:label="@string/title_activity_calcul_resultat" >
+        </activity>
     </application>
 
 </manifest>
