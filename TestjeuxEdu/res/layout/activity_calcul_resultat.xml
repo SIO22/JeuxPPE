@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".CalculResultat" >
+    tools:context=".Calculn2_Resultat" >
 
     <TextView
         android:id="@+id/youHave"
@@ -24,10 +24,12 @@
         android:layout_alignLeft="@+id/youHave"
         android:layout_below="@+id/youHave"
         android:layout_marginTop="44dp"
-        android:shadowColor="@android:color/holo_blue_dark"
-        android:shadowDx="5"
-        android:shadowDy="5"
-        android:shadowRadius="5"
-        android:text="TextView" />
+        android:textColor="#000000"
+        android:text="Soft Shadow (Below)"
+        android:padding="2dp"
+        android:shadowColor="#7F000000"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5" />
 
 </RelativeLayout>

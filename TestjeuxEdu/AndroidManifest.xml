@@ -30,10 +30,18 @@
             android:name="com.example.testjeuxedu.Calcul"
             android:label="@string/title_activity_calcul" >
         </activity>
-        <activity android:name="com.example.testjeuxedu.Calcul2" >
+        <activity
+            android:name="com.example.testjeuxedu.Calculn1"
+            android:label="@string/title_activity_calcul" >
         </activity>
         <activity
-            android:name="com.example.testjeuxedu.CalculResultat"
+            android:name="com.example.testjeuxedu.Calculn2"
+            android:label="@string/title_activity_calcul" >
+        </activity>
+        <activity android:name="com.example.testjeuxedu.Calculn2_2" >
+        </activity>
+        <activity
+            android:name="com.example.testjeuxedu.Calculn2_Resultat"
             android:label="@string/title_activity_calcul_resultat" >
         </activity>
     </application>

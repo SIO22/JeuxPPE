@@ -13,14 +13,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Calcul2 extends Activity implements OnClickListener {
+public class Calculn2 extends Activity implements OnClickListener {
 	TextView calcul;
 	private Button calculer;
 	private String valTappe;
 	private String valeurFinal2;
 	private int cpt;
 	private int cptBonneRep;
-	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +30,7 @@ public class Calcul2 extends Activity implements OnClickListener {
 		calculer = (Button) findViewById(R.id.calculer);
 		
 		Random r = new Random();
-		cpt = this.getIntent().getExtras().getInt("cpt");
-		cptBonneRep = this.getIntent().getExtras().getInt("cptBonneRep");
-		if(cpt==3){
-			Intent CalculResultat = new Intent(this,CalculResultat.class);
-			CalculResultat.putExtra("cpt",cpt);
-			CalculResultat.putExtra("cptBonneRep",cptBonneRep);
-			this.startActivityForResult(CalculResultat,20);
-		}
+		
 		Log.i("cpt", " " + cpt);
 		int valeur = 0 + r.nextInt(9 - 0);
 		int valeur2 = 0 + r.nextInt(9 - 0);
@@ -61,34 +53,31 @@ public class Calcul2 extends Activity implements OnClickListener {
 		
 		if (v == calculer) {
 			
-			
-
-			   if(valTappe.equals(""))
+			if(valTappe.equals(""))
 			   {
-			      Toast t =Toast.makeText(getApplicationContext(), "Please enter item", Toast.LENGTH_SHORT);
+			      Toast t =Toast.makeText(getApplicationContext(), "Veuillez entrer une valeur", Toast.LENGTH_SHORT);
 			      t.show();   
 			   }
 
 			else if (Integer.parseInt(valTappe) == Integer.parseInt(valeurFinal2)) {
 				Toast toast1 = Toast.makeText(getApplicationContext(),
-						"Bonne réponse !!", Toast.LENGTH_SHORT);
+						"Hello toast!", Toast.LENGTH_SHORT);
 				toast1.show();
-				cpt++;
-				Intent intentQuizz = new Intent(this,Calcul2.class);
-				intentQuizz.putExtra("cpt",cpt);
 				
+				cpt++;
+				Intent intentQuizz = new Intent(this,Calculn2_2.class);
+				intentQuizz.putExtra("cpt",cpt);
 				cptBonneRep++;
 				
 				intentQuizz.putExtra("cptBonneRep",cptBonneRep);
 				this.startActivityForResult(intentQuizz,10);
 			} else {
-				Toast toast2 = Toast.makeText(getApplicationContext(), "Fail :-(",
+				Toast toast2 = Toast.makeText(getApplicationContext(), "Fail",
 						Toast.LENGTH_SHORT);
 				toast2.show();
 				cpt++;
-				Intent intentQuizz = new Intent(this,Calcul2.class);
+				Intent intentQuizz = new Intent(this,Calculn2_2.class);
 				intentQuizz.putExtra("cpt",cpt);
-				intentQuizz.putExtra("cptBonneRep",cptBonneRep);
 				this.startActivityForResult(intentQuizz,10);
 			}
 		}

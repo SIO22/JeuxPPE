@@ -16,28 +16,28 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:text="Choisissez votre jeux"
+        android:text="Choisissez le niveau"
         android:textColor="#40A44A"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/alphabet"
+        android:id="@+id/niveau1"
         style="@style/ButtonText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="43dp"
         android:background="@drawable/btn_red"
-        android:text="Alphabet" />
+        android:text="Niveau 1" />
 
     <Button
-        android:id="@+id/calcul"
+        android:id="@+id/niveau2"
         style="@style/ButtonText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/alphabet"
+        android:layout_below="@+id/niveau1"
         android:layout_marginTop="14dp"
         android:background="@drawable/btn_red"
-        android:text="Calcul" />
+        android:text="Niveau 2" />
 
 </RelativeLayout>

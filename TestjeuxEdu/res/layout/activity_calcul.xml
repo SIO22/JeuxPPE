@@ -6,35 +6,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Calcul" >
-
-    <TextView
-        android:id="@+id/intro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="87dp"
-        android:layout_marginTop="26dp"
-        android:text="@string/hello_world" />
+    android:background="#01B0F0"
+    tools:context=".Calculn2" >
 
     <TextView
         android:id="@+id/calcul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="140dp"
-        android:text="TextView" />
+        android:layout_marginTop="140dp"/>
 
     <Button
+        style="@style/btnStyleBreakerBay"
         android:id="@+id/calculer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/chiffreTap"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:text="Calculer" />
+        android:text="Calculer" 
+        />
 
     <EditText
         android:id="@+id/chiffreTap"
@@ -46,5 +37,14 @@
         android:ems="10"
         android:inputType="number"
         android:maxLength="3" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="Vous devez trouvez le bon résultat. Il y a 10 parties au total." />
 
 </RelativeLayout>

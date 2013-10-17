@@ -2,10 +2,9 @@ package com.example.testjeuxedu;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
 import android.widget.TextView;
 
-public class CalculResultat extends Activity {
+public class Calculn2_Resultat extends Activity {
 private int cptBonneRep;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +15,7 @@ private int cptBonneRep;
 		cptBonneRep = this.getIntent().getExtras().getInt("cptBonneRep");
 		String bonneRep = String.valueOf(cptBonneRep);
 		
-		rep.setText(bonneRep+" bonnnes réponse !!!");
+		rep.setText(bonneRep+" bonnnes rï¿½ponse !!!");
 		
 		
 	}
