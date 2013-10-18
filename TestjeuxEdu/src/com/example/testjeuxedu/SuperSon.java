@@ -11,6 +11,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class SuperSon extends Activity {
 
@@ -78,8 +79,10 @@ public class SuperSon extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View v,
 					int position, long id) {
+				Toast toast = Toast.makeText(getApplicationContext(), id, Toast.LENGTH_SHORT);
+				toast.show();
 				
-				MediaPlayer mp = new MediaPlayer();
+			MediaPlayer mp = new MediaPlayer();
 				mp.reset();
 				int pos = position;
 				playThatSound(mp, pos);
